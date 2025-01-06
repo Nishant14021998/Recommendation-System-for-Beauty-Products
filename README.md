@@ -1,7 +1,5 @@
 # Recommendation-System-for-Beauty-Products
 
-# Recommendation-System-for-Beauty-Products
-
 ## Project Overview
 This project implements a Recommendation System for Amazon Beauty Products using collaborative filtering techniques. The system suggests products to users based on their historical reviews and ratings. It uses the **Surprise** library to build models like **SVD (Singular Value Decomposition)** and **SVD++** for predicting ratings and recommending products.
 
