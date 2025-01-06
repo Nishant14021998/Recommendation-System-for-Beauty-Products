@@ -41,10 +41,25 @@ Collaborative filtering is used to predict the ratings for products that a user 
 ### Matrix Factorization
 Matrix factorization methods such as **SVD (Singular Value Decomposition)** and **SVD++** were used to predict user ratings for items. These methods break down the user-item interaction matrix into smaller matrices, which help uncover hidden patterns in user behavior.
 
-## Installation
-To set up this project on your local machine, follow these steps:
+## Model Performance
+After training, the models were evaluated using **RMSE (Root Mean Squared Error)**. The models tested were:
 
-1. Clone the repository:  
-   Use the command  
-   ```bash
-   git clone https://github.com/Nishant14021998/Recommendation-System-for-Beauty-Products.git
+- **SVD**: RMSE = 1.0820
+- **SVD++**: RMSE = 1.0880
+- **BaselineOnly**: RMSE = 1.0890
+- **NormalPredictor**: RMSE = 1.4988
+
+The **SVD** model performed the best, achieving the lowest RMSE.
+
+## Conclusion
+The project successfully developed a recommendation system using collaborative filtering techniques to recommend beauty products on Amazon. The **SVD** model performed the best with the lowest RMSE, indicating high accuracy.
+
+### Future Work
+Future work can focus on integrating:
+- Content-based filtering
+- Deep learning approaches to further improve recommendation quality.
+
+## References
+1. Surprise Library Documentation: [https://surprise.readthedocs.io/en/stable/](https://surprise.readthedocs.io/en/stable/)
+2. Amazon Review Dataset: [https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews)
+3. Collaborative Filtering: A Review and New Directions by Yehuda Koren, Robert Bell, Chris Volinsky, IEEE Computer Society.
